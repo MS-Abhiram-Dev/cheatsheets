@@ -1,0 +1,53 @@
+Here’s a list of essential Docker commands for managing containers, images, networks, and volumes:
+
+### Docker Installation and Version
+- `docker --version` - Check the installed Docker version.
+- `docker info` - Display system-wide information about Docker.
+
+### Working with Docker Images
+- `docker pull <image>` - Download an image from a registry (e.g., Docker Hub).
+- `docker images` - List all available images on the local system.
+- `docker rmi <image>` - Remove an image from the local system.
+- `docker tag <image> <new_image>` - Tag an image with a new name.
+
+### Working with Docker Containers
+- `docker run <options> <image>` - Create and start a new container from an image.
+- `docker ps` - List running containers.
+- `docker ps -a` - List all containers, including stopped ones.
+- `docker exec -it <container> <command>` - Run a command in a running container.
+- `docker stop <container>` - Stop a running container.
+- `docker start <container>` - Start a stopped container.
+- `docker restart <container>` - Restart a container.
+- `docker rm <container>` - Remove a stopped container.
+- `docker logs <container>` - View logs from a container.
+
+### Working with Docker Networks
+- `docker network ls` - List all Docker networks.
+- `docker network create <network>` - Create a new network.
+- `docker network rm <network>` - Remove a network.
+- `docker network inspect <network>` - View details about a specific network.
+
+### Working with Docker Volumes
+- `docker volume ls` - List all Docker volumes.
+- `docker volume create <volume>` - Create a new volume.
+- `docker volume rm <volume>` - Remove a volume.
+- `docker volume inspect <volume>` - View details about a specific volume.
+
+### Docker Compose (if installed)
+- `docker-compose up` - Start services defined in a `docker-compose.yml` file.
+- `docker-compose down` - Stop and remove containers defined in the `docker-compose.yml`.
+- `docker-compose ps` - List containers managed by Docker Compose.
+
+### Docker System Management
+- `docker system prune` - Remove unused data (containers, networks, images).
+- `docker system df` - Show disk usage of Docker components.
+
+### Docker File Management
+- `docker build -t <image> <path>` - Build an image from a Dockerfile in the specified path.
+- `docker commit <container> <new_image>` - Create a new image from a container’s changes.
+
+### Getting Help
+- `docker <command> --help` - Display help for a specific command.
+- `docker-compose --help` - Display help for Docker Compose commands.
+
+These commands cover a wide range of Docker functionalities, from basic container management to networking and storage. If you need more specific commands or examples, feel free to ask!
